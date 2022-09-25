@@ -1,13 +1,10 @@
 {
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"*": ["src/*"]
-		},
+		"target": "es5",
 		"module": "esnext",
 		"moduleResolution": "node",
 		"jsx": "react-jsx",
-		"sourceMap": true,
+		"lib": ["ES2015", "DOM"],
 		"strict": true,
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
@@ -20,13 +17,11 @@
 		"noPropertyAccessFromIndexSignature": true,
 		"esModuleInterop": true,
 		"useDefineForClassFields": true,
-		"lib": ["ES2020", "DOM"],
-		"target": "es5",
 		"skipLibCheck": true,
 		"isolatedModules": true,
 		"useUnknownInCatchVariables": false,
 		"allowJs": false
 	},
-	"include": ["src/**/*", "jest-setup.ts"],
-	"exclude": ["node_modules", "build"]
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }

@@ -1,18 +1,18 @@
-import { Counter } from 'components/Counter';
-import { HomeWelcome } from 'components/HomeWelcome';
-import { SingleColumnLayout } from 'components/Layouts';
+import { Counter } from '../../components/Counter';
+import { HomeWelcome } from '../../components/HomeWelcome';
+import { SingleColumnLayout } from '../../components/Layouts';
 
 const HomePage = () => {
 	return (
 		<SingleColumnLayout
-			renderHeader={null}
-			renderMain={
+			header={null}
+			main={
 				<>
 					<HomeWelcome />
 					<Counter />
 				</>
 			}
-			renderFooter={null}
+			footer={null}
 		/>
 	);
 };

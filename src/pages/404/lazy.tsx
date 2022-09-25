@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { PageFallback } from 'components/SuspenseFallback';
+import { PageFallback } from '../../components/SuspenseFallback';
 
 const Component = lazy(
 	() => import('./NotFoundPage' /* webpackChunkName: '404' */),

@@ -9,7 +9,7 @@
 
 ## Introduction
 
-**react-parcel-boilerplate** is basically the same as [react-nostalgia-boilerplate](https://github.com/boilertowns/react-nostalgia-boilerplate) but it's using Parcel instead of Webpack.
+**react-parcel-boilerplate** is basically the same as [react-minimal-boilerplate](https://github.com/boilertowns/react-minimal-boilerplate) but it's using Parcel instead of Vite.
 
 The goal of this boilerplate is to maximize your effectiveness by present you:
 

@@ -1,12 +1,7 @@
-import { SingleColumnLayout } from 'components/Layouts';
-import { Typography } from 'components/Typography';
+import { SingleColumnLayout } from '../Layouts';
 
 export const PageFallback = () => {
 	return (
-		<SingleColumnLayout
-			renderHeader={null}
-			renderMain={<Typography.Paragraph>Loading...</Typography.Paragraph>}
-			renderFooter={null}
-		/>
+		<SingleColumnLayout header={null} main={<p>Loading...</p>} footer={null} />
 	);
 };

@@ -1,12 +1,11 @@
-import { SingleColumnLayout } from 'components/Layouts';
-import { Typography } from 'components/Typography';
+import { SingleColumnLayout } from '../../components/Layouts';
 
 const NotFoundPage = () => {
 	return (
 		<SingleColumnLayout
-			renderHeader={null}
-			renderMain={<Typography.Title>404 - Not found</Typography.Title>}
-			renderFooter={null}
+			header={null}
+			main={<h1>404 - Not found</h1>}
+			footer={null}
 		/>
 	);
 };

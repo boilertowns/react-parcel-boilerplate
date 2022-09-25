@@ -1,9 +1,7 @@
-import * as Sc from './SingleColumnLayout.styled';
-
 interface SingleColumnLayoutProps {
-	renderHeader: React.ReactNode;
-	renderMain: React.ReactNode;
-	renderFooter: React.ReactNode;
+	header: React.ReactNode;
+	main: React.ReactNode;
+	footer: React.ReactNode;
 }
 
 /**
@@ -12,11 +10,11 @@ interface SingleColumnLayoutProps {
 export const SingleColumnLayout = (props: SingleColumnLayoutProps) => {
 	return (
 		<>
-			<header>{props.renderHeader}</header>
+			<header>{props.header}</header>
 			<main>
-				<Sc.Container>{props.renderMain}</Sc.Container>
+				<div className="container mx-auto my-0">{props.main}</div>
 			</main>
-			<footer>{props.renderFooter}</footer>
+			<footer>{props.footer}</footer>
 		</>
 	);
 };
